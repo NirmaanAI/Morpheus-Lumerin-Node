@@ -1,0 +1,10 @@
+.timer {
+    color: rgb(63, 237, 86); 
+    font-size: 20px; 
+    text-align: center; 
+    margin-left: 12px;
+}
+
+.timer-part {
+    margin: 1px 0; 
+}

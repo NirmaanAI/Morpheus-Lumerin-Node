@@ -1,0 +1,109 @@
+.register-card {
+    background-color: rgba(105, 13, 197, 0.103); /* Translucent background for glass effect */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border to enhance glass effect */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space between cards */
+    padding: 20px; /* Padding inside the card */
+    color: #FFF; /* White text color for visibility */
+    transition: all ease 0.3s;
+    height: 510px;
+    text-align: center; /* Center-align text */
+}
+
+.register-card-title {
+    font-size: 1.5rem; /* Larger font size for titles */
+    margin-bottom: 10px; /* Space below the title */
+    font-weight: bold;
+}
+
+.register-card-subtitle {
+    font-size: 1.2rem; /* Subtitle size */
+    margin-bottom: 20px; /* Space below the subtitle */
+}
+
+.register-card-body p {
+    font-size: 1rem; /* Body text size */
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 20px; /* Space below buttons */
+}
+
+/* Buttons  */
+.claim-button {
+    --color: #00A97F;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+}
+
+.claim-button::before, .claim-button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+
+.claim-button::before {
+    top: -1em;
+    left: -1em;
+}
+
+.claim-button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.claim-button:hover::before, .claim-button:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.claim-button:hover {
+    color: rgb(10, 25, 30);
+}
+
+.claim-button:active {
+    filter: brightness(.8);
+}
+
+/* Icons  */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between social icons */
+}
+
+.social-icon {
+    color: #FFF; /* White icon color */
+    font-size: 1.5rem; /* Size of the social icons */
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--color); /* Hover color */
+}

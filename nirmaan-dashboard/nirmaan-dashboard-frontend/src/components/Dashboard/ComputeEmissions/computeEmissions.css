@@ -1,0 +1,26 @@
+/* computeEmissions.css */
+.compute-emissions-card {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 400px; 
+  height: 475px; 
+  position: relative;
+  display: flex; /* Added flex display */
+  flex-direction: column; /* Set flex direction to column */
+}
+
+.compute-emissions-title {
+  margin-bottom: 20px;
+}
+
+.filter-span {
+  font-size: 0.8em;
+  color: #888;
+}
+.compute-emissions-title .card-body {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}

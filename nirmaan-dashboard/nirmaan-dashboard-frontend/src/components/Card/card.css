@@ -1,0 +1,162 @@
+.card {
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    background: rgba(105, 13, 197, 0.103);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .card::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    border-radius: 50%;
+    border: 35px solid rgba(255, 255, 255, 0.102);
+    transition: all .8s ease;
+    filter: blur(.5rem);
+  }
+  
+  .text {
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 1.2em;
+    justify-content: space-between; 
+  }
+  
+  .subtitle {
+    font-size: .6em;
+    font-weight: 300;
+    color: rgba(240, 248, 255, 0.691);
+  }
+  
+  .icons {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 250px;
+    border-radius: 0px 0px 15px 15px;
+    overflow: hidden;
+  }
+  
+  .svg-icon {
+    width: 25px;
+    height: 25px;
+    stroke: rgb(38, 59, 126);
+  }
+  
+  .card:hover::before {
+    width: 140px;
+    height: 140px;
+    top: -30%;
+    left: 50%;
+    filter: blur(0rem);
+  }
+
+  .card-title {
+    font-size: 1.2rem; 
+    margin-bottom: 0.5rem; /* Space below the title */
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.amount{
+  font-size: 60px;
+  color: rgb(63, 237, 86);
+  margin-left: 30px;
+}
+
+.icon-container i {
+  font-size: 45px; /* Change this to control the size of the icons */
+  margin-right: 25px;
+}
+
+.btn {
+  border: none;
+  width: 100%; /* Full width */
+  padding: 10px 0; /* Padding top and bottom for better appearance */
+  background-color: rgba(247, 234, 234, 0.589);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 15px 15px; /* Rounded corners at the bottom */
+  color: rgb(57, 57, 57);
+}
+
+.btn:hover {
+  background-color: rgb(247, 234, 234);
+}
+
+.icon-style-button{
+  color: rgb(57, 57, 57);
+  margin-left: 25px;
+}
+
+.graphs-card {
+  width: 100%; 
+  max-width: none; 
+  height: 450px; 
+  /* background: rgba(13, 110, 253, 0.1); */
+  border-radius: 15px; 
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.graphs-card .card-body {
+  padding: 0; 
+}
+
+.graphs-card .card-title {
+  font-size: 1.6rem;
+  color: #fff; 
+  margin-bottom: 10px; 
+}
+
+.graphs-card .chart-container {
+  flex-grow: 1; 
+}
+
+.graphs-card .apexcharts-canvas {
+  width: 100% !important; 
+  max-width: 100% !important;
+}
+
+.recent-models-card {
+  width: 100%;  
+  max-width: none;
+  height: 550px;
+  border-radius: 15px;  
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Subtle shadow for depth */
+  overflow: hidden;  
+  padding: 20px;  /* Internal spacing */
+  margin-bottom: 20px;  /* Space below the card */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.recent-models-card .card-title {
+  font-size: 1.6rem;
+  color: #ffffff; 
+  margin-bottom: 10px; 
+}
+
+.recent-models-card .card-body {
+  padding: 0; 
+}

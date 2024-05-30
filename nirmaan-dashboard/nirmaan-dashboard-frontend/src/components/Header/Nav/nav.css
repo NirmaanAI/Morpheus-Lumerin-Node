@@ -1,0 +1,210 @@
+.connect-wallet-button {
+  display: flex;            /* Enable flexbox */
+  align-items: center;      /* Center alignment vertically */
+  justify-content: center;  /* Center alignment horizontally */
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #b866f6;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #b866f6;
+  transition: 0.5s ease;
+  user-select: none;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+.connect-wallet-button:hover, .connect-wallet-button:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff, 0 0 100px #008cff;
+}
+
+.connect-wallet-button:active {
+  background-color: #6200ee; /* Slightly darker purple when pressed */
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12); /* Material UI's pressed shadow */
+}
+
+.wallet-container {
+  position: relative;
+  display: inline-block;
+}
+
+.wallet-button {
+  display: flex;            /* Enable flexbox */
+  align-items: center;      /* Center alignment vertically */
+  justify-content: center;  /* Center alignment horizontally */
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #b866f6;
+  transition: 0.5s ease;
+  user-select: none;
+  margin-top: 12px;
+  margin-right: 10px;
+  width: 170px;
+}
+
+.dropdown-icon {
+  margin-left: 12px;
+}
+
+.wallet-dropdown {
+  position: absolute;
+  background-color: #070101;
+  min-width: 170px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  z-index: 1;
+  right: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif; /* Add Material UI font */
+  margin-right: 8px;
+  margin-top: 2px;
+}
+
+.wallet-dropdown .input {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  background-color: #0d1117;
+  justify-content: center;
+  border-radius: 15px;
+  transition: 1s;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.wallet-dropdown .value {
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: white;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 1s;
+  box-sizing: border-box;
+}
+
+.wallet-dropdown .value:not(:active):hover,
+.wallet-dropdown .value:focus {
+  display: flex;
+  box-sizing: border-box;
+  border: 2px solid #1a1f24;
+  color: #ffffff;
+  width: 170px;
+}
+
+.wallet-dropdown .value:focus,
+.wallet-dropdown .value:active {
+  background-color: #1a1f24;
+  outline: none;
+  margin-left: 17px;
+  width: 170px;
+}
+
+.wallet-dropdown .value::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -15px;
+  width: 5px;
+  height: 80%;
+  background-color: #2f81f7;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.wallet-dropdown .value:focus::before,
+.wallet-dropdown .value:active::before {
+  opacity: 1;
+}
+
+.wallet-dropdown .value svg {
+  width: 20px;
+}
+
+.wallet-dropdown:hover > :not(.value:hover) {
+  transition: 300ms;
+  filter: blur(1.5px);
+  transform: scale(0.95, 0.95);
+}
+
+.dashboard-link {
+  text-decoration: none;
+  color: inherit; 
+}
+
+.dashboard-link:hover,
+.dashboard-link:focus {
+  text-decoration: none; 
+}
+
+.wallet-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wallet-dropdown li {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 14px; 
+  color: #f770fa; 
+}
+
+.wallet-dropdown li:last-child {
+  border-bottom: none;
+}
+
+.wallet-dropdown li:hover {
+  background-color: #270674;
+}
+
+.network-indicator {
+  height: 10px;
+  width: 10px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.error-message {
+  color: #f44336;
+  padding: 8px;
+}
+
+.icon-margin {
+  margin-right: 10px;  
+}
+
+.icon-style {
+  margin-left: 10px;  
+}
+

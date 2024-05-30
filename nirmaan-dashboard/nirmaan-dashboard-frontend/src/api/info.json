@@ -1,0 +1,10 @@
+{
+  "publicCardsUrl": "http://127.0.0.1:8000/publicCards",
+  "modelDataUrl": "http://127.0.0.1:8000/modelData",
+  "recentActivityUrl": "http://127.0.0.1:8000/recentActivity",
+  "modelQueryUrl": "http://127.0.0.1:8000/model",
+  "providerExistsUrl": "http://127.0.0.1:8000/providerExists",
+  "providerTableDataUrl": "http://127.0.0.1:8000/providerTableData",
+  "providerModelChartUrl": "http://127.0.0.1:8000/providerModelChart",
+  "hostedModels": "http://127.0.0.1:8000/hostedModels"
+}

@@ -1,0 +1,20 @@
+.pagetitle {
+    margin-bottom: 10px;
+}
+
+.pagetitle h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.icon-style{
+    color: #ffffff;
+    margin-right: 0px;
+}
+
+.breadcrumb-item.active {
+    color: white;
+    margin-left: 0px;
+}
